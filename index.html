@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duolingo</title>
+
+    <link rel="icon" href="./assets/duolingo.svg" type="/images/x-icon" />
+    <!-- ========= Material Icon ========= -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- ========= Style Sheet ========= -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ========= Navigation Bar ========= -->
+    <div class="container">
+      <aside class="nav-bar">
+        <div class="nav-top">
+          <div class="nav-logo">
+            <img src="./assets/logo.svg" />
+            <h2>
+              <a
+                href="https://invite.duolingo.com/BDHTZTB5CWWKSSHLTR2OPX4JJE"
+                target="_blank"
+                ><img class="heading-text" src="./assets/duolingo-plus.svg"
+              /></a>
+            </h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-symbols-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="side-bar">
+          <a href="#dashBoard" class="nav-link">
+            <span class="material-symbols-sharp"> dashboard </span>
+            <h3 class="nav-title">Dashboard</h3>
+          </a>
+
+          <a href="#stats" class="nav-link">
+            <span class="material-symbols-sharp"> monitoring</span>
+            <h3 class="nav-title">Statistics</h3>
+          </a>
+
+          <a href="#recentUpdates" class="nav-link">
+            <span class="material-symbols-sharp"> replay_circle_filled </span>
+            <h3 class="nav-title">Recent updates</h3>
+          </a>
+
+          <a href="#socialMedia" class="nav-link">
+            <span class="material-symbols-sharp"> groups </span>
+            <h3 class="nav-title">Social media</h3>
+          </a>
+
+          <a href="#settings" class="nav-link">
+            <span class="material-symbols-sharp"> settings</span>
+            <h3 class="nav-title">Settings</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- ========= Dash Board ========= -->
+
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="dashboard" id="dashBoard">
+          <div class="learning-points flex">
+            <span class="material-symbols-sharp"> electric_bolt </span>
+            <h3>102343 xp</h3>
+            <p>Total Xp</p>
+          </div>
+
+          <div class="streaks flex">
+            <span class="material-symbols-sharp"> local_fire_department </span>
+            <h3>287</h3>
+            <p>Current Streak</p>
+          </div>
+
+          <div class="league flex">
+            <span class="material-symbols-sharp"> arming_countdown </span>
+            <h3>Diamond</h3>
+            <p>Current league</p>
+          </div>
+        </div>
+
+        <!-- ========= Statistics ========= -->
+        <div class="stats" id="stats">
+          <h1>Statistics</h1>
+          <canvas id="myChart"></canvas>
+        </div>
+      </main>
+
+      <!-- ========= Recent Updates ========= -->
+      <!-- Profile  -->
+      <article>
+        <div class="right">
+          <div class="top">
+            <button class="menu" id="menu-btn">
+              <img src="./assets/menu-alt-left-regular-24.png" alt="" />
+            </button>
+            <div class="toggler">
+              <span class="material-symbols-sharp selected"> light_mode </span>
+
+              <span class="material-symbols-sharp"> dark_mode </span>
+            </div>
+            <div class="profile">
+              <div class="info">
+                <p>Hey , I'm <b>Steve</b></p>
+              </div>
+              <div class="profile-picture">
+                <img src="./assets/my-profile.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Updates -->
+
+          <div class="updates" id="recentUpdates">
+            <h1>Recent Updates</h1>
+            <div class="update">
+              <div class="profile-picture">
+                <img src="./assets/profile-1.jpg" />
+              </div>
+
+              <div class="message">
+                <p><b>Fernanda</b> is following you!</p>
+                <small class="small">5 min ago..</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-picture">
+                <img src="./assets/profile-2.jpg" />
+              </div>
+
+              <div class="message">
+                <p><b>Marcus</b> congratulated you..</p>
+                <small class="small">7 min ago..</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-picture">
+                <img src="./assets/profile-3.jpg" />
+              </div>
+
+              <div class="message">
+                <p><b>Martha</b> is following you!</p>
+                <small class="small">20 min ago..</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-picture">
+                <img src="./assets/profile-4.jpg" />
+              </div>
+
+              <div class="message">
+                <p><b>Jasper</b> took your place..</p>
+                <small class="small">1 hour ago..</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========= Social Media ========= -->
+        <div class="bottom">
+          <h1>Follow Duolingo</h1>
+          <div class="social-media" id="socialMedia">
+            <a
+              href="https://twitter.com/duolingo"
+              class="social-links"
+              targe="_blank"
+            >
+              <img
+                class="social-media__icons"
+                src="./assets/twitter.png"
+                alt="twiiter-icon"
+              />
+              <h3>Twitter</h3>
+            </a>
+            <a
+              href="https://www.facebook.com/duolingo"
+              class="social-links"
+              targe="_blank"
+            >
+              <img
+                class="social-media__icons"
+                src="./assets/facebook.png"
+                alt="facebook-icon"
+              />
+              <h3>Facebook</h3></a
+            >
+            <a
+              href="https://www.instagram.com/duolingo"
+              class="social-links"
+              targe="_blank"
+            >
+              <img
+                class="social-media__icons"
+                src="./assets/instagram.png"
+                alt="instagram-icon"
+              />
+              <h3>Instagram</h3></a
+            >
+            <a
+              href="https://www.tiktok.com/@duolingo"
+              class="social-links"
+              targe="_blank"
+            >
+              <img
+                class="social-media__icons"
+                src="./assets/tik-tok.png"
+                alt="tictok-icon"
+              />
+              <h3>Tic Tok</h3></a
+            >
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- ========= JavaScript ========= -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+      integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
